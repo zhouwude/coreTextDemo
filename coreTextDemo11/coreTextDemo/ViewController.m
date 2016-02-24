@@ -9,19 +9,25 @@
 #import "ViewController.h"
 #import "customView1.h"
 #import "CustomView2.h"
+#import  <objc/runtime.h>
+#import  <objc/message.h>
 @interface ViewController ()
 
 @end
-
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 //    customView1 *view = [[customView1 alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:view];
     CustomView2 *view = [[CustomView2 alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
-    view.backgroundColor = [UIColor whiteColor];
+    //view.backgroundColor = [UIColor whiteColor];
+    view.backgroundColor = [UIColor colorWithRed:0.0028 green:1.0 blue:0.0044 alpha:0.395770474137931];
+    //[self performSelector:@selector(hehe)];
+
+    
     /*本次CoreText教程为一个系列，大概总共分4-5篇博文来叙述，内容分布为：
      
      第一篇介绍CoreText的一些基础知识和绘制流程，仅绘制纯文本内容，且不去讲究排版的细节，先画出来为主。
@@ -41,10 +47,19 @@
      学习CoreText需要有一些基础知识储备，关于字符和字形的知识请点击这里以及这里。另外还需要对NSAttributedString有一些了解，CoreText对文本和图片的绘制就是依赖于NSAttributedString属性字符串的。
      
 */
-    
 
     // Do any additional setup after loading the view, typically from a nib.
 }
+//+(BOOL)resolveInstanceMethod:(SEL)sel{
+////    SEL select = sel;
+////    SEL sel1 = @selector(hehe);
+////    if(select == sel1){
+//////        class_addMethod([self class], sel, , <#const char *types#>)
+////        return YES;
+////    }
+//
+//    return [super resolveClassMethod:sel];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
