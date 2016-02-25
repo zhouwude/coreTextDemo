@@ -19,7 +19,7 @@ void fun1(int a, int b){
     //char *name[4] = {"zzzzz","hhhhh","wwwww","ddddd"};
     function hehe;
     hehe = fun2;
-   int c =  hehe();
+   int c =  (*hehe)();
     NSLog(@"%d",c);
     int s1;
     function3(&s1);

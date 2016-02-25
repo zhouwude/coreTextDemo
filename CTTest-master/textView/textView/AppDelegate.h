@@ -8,7 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
+
+@public
+    NSString *zhouwude;
+
+
+}
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextView *textView;

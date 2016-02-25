@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620444321C7E841D0094996C /* testCFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 620444301C7E841D0094996C /* testCFile.c */; };
 		A3CFE6BC16F4493E008C6E94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CFE6BB16F4493E008C6E94 /* Cocoa.framework */; };
 		A3CFE6C616F4493E008C6E94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3CFE6C416F4493E008C6E94 /* InfoPlist.strings */; };
 		A3CFE6C816F4493E008C6E94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFE6C716F4493E008C6E94 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620444301C7E841D0094996C /* testCFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testCFile.c; sourceTree = "<group>"; };
+		620444311C7E841D0094996C /* testCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCFile.h; sourceTree = "<group>"; };
 		A3CFE6B816F4493E008C6E94 /* textView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CFE6BB16F4493E008C6E94 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A3CFE6BE16F4493E008C6E94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -48,6 +51,8 @@
 		A3CFE6AF16F4493E008C6E94 = {
 			isa = PBXGroup;
 			children = (
+				620444301C7E841D0094996C /* testCFile.c */,
+				620444311C7E841D0094996C /* testCFile.h */,
 				A3CFE6C116F4493E008C6E94 /* textView */,
 				A3CFE6BA16F4493E008C6E94 /* Frameworks */,
 				A3CFE6B916F4493E008C6E94 /* Products */,
@@ -170,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620444321C7E841D0094996C /* testCFile.c in Sources */,
 				A3CFE6C816F4493E008C6E94 /* main.m in Sources */,
 				A3CFE6CF16F4493E008C6E94 /* AppDelegate.m in Sources */,
 			);
@@ -305,6 +311,7 @@
 				A3CFE6D716F4493E008C6E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

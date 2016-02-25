@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+@public
+    
+    NSString *zhouwude;
+    
+}
 
 @end
+static NSString *cellIde1= @"zhouwude1";
