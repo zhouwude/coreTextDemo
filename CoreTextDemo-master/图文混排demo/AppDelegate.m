@@ -28,7 +28,9 @@ struct zwdStruct{
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    UIImage *image11;
+}
 
 //iOS系统版本条件编译宏
 
@@ -61,6 +63,16 @@ struct zwdStruct{
 #else
 
 - (BOOL)isAsynchronous {
+   // arc和mrc混编需要使用 预编译 命令
+    #if __has_feature(objc_arc)
+    
+    //compiling with ARC
+    #else
+    
+    
+    [image11 release];
+     //compiling without ARC
+    #endif
     return YES;
 }
 #endif
