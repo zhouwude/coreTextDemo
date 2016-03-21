@@ -15,7 +15,7 @@
 @implementation ViewController
 typedef int (*function)();//声明一个函数指针 即可以指向函数的指针（函数名称相当于函数的收地址）
 void fun1(int a, int b){
-    
+    //数组名称是数组的手地址 是一个指针常量 不能被赋值。
     //char *name[4] = {"zzzzz","hhhhh","wwwww","ddddd"};
     function hehe;
     hehe = fun2;
@@ -43,6 +43,8 @@ void function3(int *a){
     
     [super viewDidLoad];
     //空字符串的长度
+    int a;
+    
     
     fun1(0, 0);
 	// Do any additional setup after loading the view, typically from a nib.
